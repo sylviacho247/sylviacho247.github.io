@@ -86,14 +86,7 @@ ul {
 
 .custom-font-heading {
   font-family: 'Playfair Display', serif; /* or any font you like */
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: 400;
   color: white; /* optional */
-}
-
-.custom-font-heading1 {
-  font-family: 'Playfair Display', serif; /* or any font you like */
-  font-size: 2rem;
-  font-weight: 400;
-  color: black; /* optional */
 }
