@@ -70,6 +70,16 @@ h1, h2, h3 {
   color: #FFFFFF;
 }
 
+h2 {
+  font-family: 'Georgia', serif; /* or any custom font */
+  font-size: 2rem;               /* increase size */
+  font-weight: normal;           /* optional: makes it less bold */
+  color: #ffffff;                /* optional: override if needed */
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+
 /* Links */
 a {
   color: #7852A9;
