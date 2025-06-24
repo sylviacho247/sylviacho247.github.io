@@ -44,6 +44,7 @@ html, body {
   font-weight: bold;
 }
 
+
 #sidebar a.active {
   color: #00bfff;
 }
@@ -66,12 +67,12 @@ html, body {
 
 /* Headings */
 h1, h2, h3 {
-  color: #313131;
+  color: #FFFFFF;
 }
 
 /* Links */
 a {
-  color: #268bd2;
+  color: #7852A9;
 }
 a:hover, a:focus {
   text-decoration: underline;
