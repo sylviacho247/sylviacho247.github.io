@@ -90,9 +90,3 @@ ul {
   font-weight: 400;
   color: white; /* optional */
 }
-.custom-font-heading1 {
-  font-family: 'Playfair Display', serif; /* or any font you like */
-  font-size: 2rem;
-  font-weight: 400;
-  color: black; /* optional */
-}
