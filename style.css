@@ -54,7 +54,6 @@ html, body {
 #sidebar footer {
   margin-top: auto;
   font-size: 0.9rem;
-  font-family: 'Playfair Display', serif;
   color: #ccc;
 }
 
@@ -76,7 +75,6 @@ html, body {
 /* Headings */
 
 h1, h2, h3 {
-  font-family: 'Playfair Display', serif;
   color: #000000;
 }
 
