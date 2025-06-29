@@ -62,7 +62,7 @@ html, body {
   font-size: 0.87rem;
   color: #7852A9;
   display: inline;
-
+  
 }
 
 /* Main Content */
@@ -72,7 +72,7 @@ html, body {
   background-color: white;
   color: #333;
   flex-grow: 1;
-  
+  font-weight: normal;
 }
 
 .content p,
