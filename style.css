@@ -40,6 +40,7 @@ html, body {
   display: block;
   margin-bottom: 1rem;
   color: white;
+  font-weight: bold;
   text-decoration: none;
   font-size: 1.1rem; 
 }
@@ -59,7 +60,6 @@ html, body {
 /* Sidebar Footer Links */
 #sidebar footer a {
   font-size: 0.87rem;
-  font-weight: bold;
   color: #7852A9;
   display: inline;
 
