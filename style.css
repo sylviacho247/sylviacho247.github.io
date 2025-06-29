@@ -62,6 +62,8 @@ html, body {
   font-size: 0.87rem;
   font-weight: bold;
   color: #7852A9;
+  display: inline;
+
 }
 
 /* Main Content */
