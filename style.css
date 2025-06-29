@@ -57,6 +57,13 @@ html, body {
   color: #ccc;
 }
 
+/* Sidebar Footer Links */
+#sidebar footer a {
+  font-size: 0.9rem;
+  font-weight: normal;
+  color: #7852A9;
+}
+
 /* Main Content */
 .content {
   margin-left: 18rem;
