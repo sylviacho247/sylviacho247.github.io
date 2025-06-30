@@ -21,6 +21,7 @@ html, body {
 
 /* Sidebar */
 #sidebar {
+  font-family: 'Roboto', serif;
   width: 18rem;
   padding: 2rem 1rem;
   background-color: #202020;
@@ -67,6 +68,7 @@ html, body {
 
 /* Main Content */
 .content {
+  font-family: 'Roboto', serif;
   margin-left: 18rem;
   padding: 2rem;
   background-color: white;
@@ -87,6 +89,7 @@ h1 {
 }
 
 h1, h2, h3 {
+  font-family: 'Roboto', serif;
   color: #000000;
 }
 
