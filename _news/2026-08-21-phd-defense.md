@@ -6,7 +6,7 @@ summary: "I passed my doctoral defense in Linguistics at Simon Fraser University
 
 On August 21, I successfully defended my PhD dissertation and earned my doctorate in Linguistics at Simon Fraser University. (Finally, woohoo!)
 
-My dissertation, titled *Cross-language voice variation and talker identity in Korean heritage speakers*, investigated how heritage multilingualism shapes both how we produce voices and how we hear them.
+My dissertation, titled **Cross-language voice variation and talker identity in Korean heritage speakers**, investigated how heritage multilingualism shapes both how we produce voices and how we hear them.
 
 ![Diagram showing English and Korean prototypes sharing one phonetic space, with style and language as deviations from the norm](/images/defense-shared-space.png)
 
