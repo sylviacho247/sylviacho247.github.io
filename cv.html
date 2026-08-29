@@ -10,7 +10,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <script src="menu.js" defer></script>
 </head>
 <body>
 
@@ -86,6 +85,51 @@
       <p class="copyright">© 2026 Sylvia Cho. Layout adapted from <a href="https://html5up.net/forty" target="_blank" rel="noopener">Forty</a> by <a href="https://html5up.net" target="_blank" rel="noopener">HTML5 UP</a> (CC BY 3.0).</p>
     </div>
   </footer>
+
+  <script>
+  /* Slide-in menu. Inlined so the site needs no separate JS file. */
+  (function () {
+    "use strict";
+    var body = document.body;
+    var toggle = document.getElementById("menu-toggle");
+    var panel = document.getElementById("menu");
+    var backdrop = document.getElementById("menu-backdrop");
+    var closeBtn = document.getElementById("menu-close");
+    if (!toggle || !panel || !backdrop) return;
+
+    function isOpen() { return body.classList.contains("menu-open"); }
+
+    function open() {
+      body.classList.add("menu-open");
+      toggle.setAttribute("aria-expanded", "true");
+      panel.removeAttribute("aria-hidden");
+      if (closeBtn) closeBtn.focus();
+    }
+
+    function close() {
+      body.classList.remove("menu-open");
+      toggle.setAttribute("aria-expanded", "false");
+      panel.setAttribute("aria-hidden", "true");
+      toggle.focus();
+    }
+
+    toggle.addEventListener("click", function () { isOpen() ? close() : open(); });
+    backdrop.addEventListener("click", close);
+    if (closeBtn) closeBtn.addEventListener("click", close);
+
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && isOpen()) close();
+    });
+
+    Array.prototype.forEach.call(panel.querySelectorAll("a"), function (link) {
+      link.addEventListener("click", close);
+    });
+
+    window.addEventListener("resize", function () {
+      if (isOpen() && window.innerWidth > 1400) close();
+    });
+  })();
+  </script>
 
 </body>
 </html>
