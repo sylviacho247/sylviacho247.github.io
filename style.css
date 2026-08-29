@@ -648,6 +648,59 @@ body.menu-open #menu-backdrop { opacity: 1; visibility: visible; }
 
 .card ul li:last-child { margin-bottom: 0; }
 
+/* --- Research figures ---------------------------------------------------
+   The SVGs are written inline in the page rather than linked as <img>, so
+   they inherit Karla from the stylesheet, stay crisp at any zoom or pixel
+   density, and need no image files in the repo. Widths come from the
+   viewBox, so `width: 100%; height: auto` is all the sizing they need.
+   ------------------------------------------------------------------------ */
+
+.figure {
+  margin: 1.35rem 0 0;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--line);
+}
+
+.figure svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 40rem;
+  margin: 0 auto;
+  overflow: visible;
+}
+
+.figure svg text {
+  font-family: var(--text);
+  /* Belt and braces: if Karla is slow to arrive, the fallback metrics
+     shouldn't blow the labels out of their boxes. */
+  font-kerning: normal;
+}
+
+.figure figcaption {
+  max-width: 40rem;
+  margin: 0.7rem auto 0;
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: var(--muted);
+  text-align: center;
+}
+
+.figure figcaption b { color: var(--iris); font-weight: 700; }
+
+/* The eta-squared grid has eight labelled columns; below roughly 34rem the
+   cell values stop being legible, so it scrolls in its own box rather than
+   shrinking the whole page. */
+.figure--wide { overflow-x: auto; }
+.figure--wide svg { min-width: 34rem; max-width: 44rem; }
+
+/* The dissertation gets its own block above the three interest cards. */
+.card--feature {
+  border-left: 3px solid var(--iris-light);
+}
+
+.card--feature .figure { margin-top: 1.15rem; }
+
 /* --- Fun facts ---------------------------------------------------------- */
 
 .facts { list-style: none; padding: 0; margin: 0; }
