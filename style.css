@@ -784,6 +784,29 @@ body.menu-open #menu-backdrop { opacity: 1; visibility: visible; }
   font-style: italic;
 }
 
+/* Images in a post — slides, figures, photos */
+.post img {
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  box-shadow: 0 8px 24px rgba(64, 36, 92, 0.10);
+  margin: 0.4rem 0 0.2rem;
+}
+
+/* A paragraph that is only an image gets extra room around it */
+.post p:has(> img:only-child) { margin: 2rem 0 0.6rem; }
+
+/* Image caption. Write it in the news file as:
+   <p class="caption">Your caption here.</p>   */
+.post .caption {
+  font-size: 0.92rem;
+  line-height: 1.5;
+  color: var(--muted);
+  font-style: italic;
+  margin-top: 0.1rem;
+}
+
 .post-back {
   margin-top: 2.5rem;
   padding-top: 1.5rem;
