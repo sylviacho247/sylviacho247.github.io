@@ -806,8 +806,13 @@ body.menu-open #menu-backdrop { opacity: 1; visibility: visible; }
 /* Image caption. Write it in the news file as:
    <p class="caption">Your caption here.</p>   */
 .post .caption {
-  max-width: 28rem;      /* line up with the image above it */
-  margin: 0.1rem auto 1.6rem;   /* breathing room before the next paragraph */
+  /* Share the paragraph's box (44rem) rather than the image's (28rem):
+     the image is centred inside the paragraph, so a 28rem caption centred
+     in the wider container lands 64px to its right. Centre the text
+     instead, and it sits under the picture whatever width the image is. */
+  max-width: 44rem;
+  margin: 0.1rem 0 1.6rem;   /* breathing room before the next paragraph */
+  text-align: center;
   font-size: 0.92rem;
   line-height: 1.5;
   color: var(--muted);
