@@ -74,8 +74,7 @@
 
         <div class="profile-about">
           <h2>About Me</h2>
-          <p>Hello! My name is <b>Sylvia Cho</b>, and I am a sessional lecturer in the Department of Linguistics at the <a href="https://linguistics.ubc.ca/" target="_blank" rel="noopener">University of British Columbia</a>, situated on the traditional, ancestral, and unceded territory of the <a href="https://www.musqueam.bc.ca/" target="_blank" rel="noopener">xʷməθkʷəy̓əm (Musqueam) people</a>. My research interests lie in phonetics, multilingualism, speech science, and applied linguistics — particularly <b>how multilingualism shapes speech across linguistic, social, and acoustic dimensions</b>.</p>
-          <p class="profile-updated">Updated August 2026</p>
+          <p>Hi! I’m <b>Sylvia Cho</b>, a sessional lecturer in the Department of Linguistics at the <a href="https://linguistics.ubc.ca/" target="_blank" rel="noopener">University of British Columbia</a>, situated on the traditional, ancestral, and unceded territory of the <a href="https://www.musqueam.bc.ca/" target="_blank" rel="noopener">xʷməθkʷəy̓əm (Musqueam) people</a>. My research interests lie in phonetics, multilingualism, speech science, and applied linguistics — particularly <b>how multilingualism shapes speech across linguistic, social, and acoustic dimensions</b>.</p>
         </div>
 
       </div>
@@ -101,7 +100,14 @@
         <p class="section-title">Updates</p>
         <h2 class="section-heading">Recent News</h2>
         <ul class="news">
-          {% assign items = site.news | sort: "date" | reverse %}
+          {%- comment -%}
+            Order by `posted:` (the day you added the item), newest first.
+            Anything without a `posted:` falls back to its event date and
+            sits below, so a file that forgets the field never jumps the queue.
+          {%- endcomment -%}
+          {% assign added = site.news | where_exp: "i", "i.posted" | sort: "posted" | reverse %}
+          {% assign rest = site.news | where_exp: "i", "i.posted == nil" | sort: "date" | reverse %}
+          {% assign items = added | concat: rest %}
           {% for item in items limit: site.news_limit %}
           <li>
             <span class="news-date">{% if item.label %}{{ item.label }}{% else %}{{ item.date | date: "%b %Y" }}{% endif %}</span>

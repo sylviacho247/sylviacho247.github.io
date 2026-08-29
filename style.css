@@ -544,6 +544,8 @@ body.menu-open #menu-backdrop { opacity: 1; visibility: visible; }
 
 .profile-about a:hover { color: var(--amber); }
 
+/* Kept for reuse: add <p class="profile-updated">Updated …</p> inside
+   .profile-about to show a small "last updated" line under the bio. */
 .profile-updated {
   font-size: 0.85rem;
   letter-spacing: 0.14em;
