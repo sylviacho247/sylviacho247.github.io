@@ -469,8 +469,23 @@ body.menu-open #menu-backdrop { opacity: 1; visibility: visible; }
   font-variation-settings: "opsz" 144, "SOFT" 40;
   letter-spacing: -0.015em;
   color: var(--white);
-  margin: 0 0 0.45rem;
+  margin: 0 0 0.1rem;
   line-height: 1.1;
+}
+
+/* Neither Fraunces nor Karla carries Hangul, so the browser would substitute
+   whatever it likes. Naming the system Korean faces makes the fallback a
+   choice: 조실비아 sits a little quieter than the English name, as a second
+   reading of it rather than a subtitle. */
+.profile-card .profile-name-ko {
+  font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR',
+               'Nanum Gothic', sans-serif;
+  font-size: 1.02rem;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  color: rgba(255, 255, 255, 0.72);
+  margin: 0 0 0.5rem;
+  line-height: 1.2;
 }
 
 .profile-card .profile-role {
@@ -687,6 +702,26 @@ body.menu-open #menu-backdrop { opacity: 1; visibility: visible; }
 }
 
 .figure figcaption b { color: var(--iris); font-weight: 700; }
+
+/* Captions run in three parts: what the figure is, where it came from, then
+   what it shows. The first two get their own lines so the eye can skip them
+   and land on the description. */
+.figure figcaption .fig-label {
+  display: block;
+  margin-bottom: 0.1rem;
+}
+
+.figure figcaption .fig-cite {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-size: 0.82rem;
+  letter-spacing: 0.01em;
+  color: var(--muted);
+}
+
+/* The source line is quieter than the title above it, so the author names
+   inside it shouldn't inherit the iris of a caption lead-in. */
+.figure figcaption .fig-cite b { color: inherit; font-weight: 700; }
 
 /* The eta-squared grid has eight labelled columns; below roughly 34rem the
    cell values stop being legible, so it scrolls in its own box rather than
