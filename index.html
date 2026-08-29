@@ -105,10 +105,21 @@
           {% for item in items limit: site.news_limit %}
           <li>
             <span class="news-date">{% if item.label %}{{ item.label }}{% else %}{{ item.date | date: "%b %Y" }}{% endif %}</span>
-            <span class="news-body">{{ item.content | markdownify }}</span>
+            <span class="news-body">
+              {%- if item.title %}<a class="news-title" href="{{ item.url }}">{{ item.title }}</a>{% endif -%}
+              {%- if item.summary -%}
+                {{ item.summary | markdownify }}
+                <a class="news-more" href="{{ item.url }}">Read more &rarr;</a>
+              {%- else -%}
+                {{ item.content | markdownify }}
+              {%- endif -%}
+            </span>
           </li>
           {% endfor %}
         </ul>
+        {% if site.news.size > site.news_limit %}
+        <p class="news-all"><a href="news.html">All news &rarr;</a></p>
+        {% endif %}
       </div>
     </section>
     {% endif %}

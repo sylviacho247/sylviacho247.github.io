@@ -1,23 +1,31 @@
 # Jekyll configuration for sylviacho247.github.io
 #
-# The only thing this does is register the _news folder as a "collection",
-# so each file in _news/ becomes an item in the Recent News list on the
-# home page. Everything else on the site is plain HTML and is copied
-# through untouched.
+# The _news folder is registered as a "collection". Each file in it becomes
+# an item in Recent News on the home page AND gets its own page at
+# /news/<filename>/ — so a short item can stay one line, and a longer one
+# can have a "Read more" link to the full post.
 #
+# Everything else on the site is plain HTML, copied through untouched.
 # Note: no `theme:` key. The site uses its own style.css.
 
 title: Sylvia Cho
-description: Speech scientist and sessional lecturer in Linguistics at the University of British Columbia.
+description: Speech scientist and lecturer in Linguistics at the University of British Columbia.
 url: https://sylviacho247.github.io
 
 collections:
   news:
-    output: false # news items appear on the home page; they get no page of their own
+    output: true # each news item also gets its own page
+    permalink: /news/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: news
+    values:
+      layout: news
 
 # How many news items to show on the home page.
-# Change this number and the list grows or shrinks.
-news_limit: 6
+news_limit: 3
 
 exclude:
   - README.md
