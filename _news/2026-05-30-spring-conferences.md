@@ -16,4 +16,4 @@ This spring took my research on voices from Vancouver to Philadelphia to Seoul �
 
 **May 23 — Seoul.** I ended my spring season with a poster, *Effects of early bilingualism on voice quality and voice perception*, at HisPhonCog 2026. It was lovely to be back in Korea after seven years.
 
-These presentations gave me invaluable feedback and new directions for the next phase of my voice‑quality work, as well as for wrapping up my dissertation. I’m looking forward to finishing my studies and moving into the dissemination stage.
+These presentations gave me invaluable feedback and new directions for the next phase of my voice‑quality work, as well as for wrapping up my dissertation. I’m looking forward to moving into the dissemination stage afterwards!
