@@ -1,5 +1,5 @@
 ---
-title: "🎉 I presented at ASA, HisPhonCog2026, and UBC this spring!"
+title: "👩🏻‍🏫 I presented at ASA, HisPhonCog2026, and UBC this spring!"
 date: 2026-05-30
 summary: "A spring of voice research: Vancouver, Philadelphia, and Seoul."
 ---
