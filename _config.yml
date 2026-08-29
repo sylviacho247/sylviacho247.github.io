@@ -22,7 +22,7 @@ defaults:
       path: ""
       type: news
     values:
-      layout: news
+      layout: post
 
 # How many news items to show on the home page.
 news_limit: 3
