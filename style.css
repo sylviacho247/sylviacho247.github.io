@@ -469,23 +469,19 @@ body.menu-open #menu-backdrop { opacity: 1; visibility: visible; }
   font-variation-settings: "opsz" 144, "SOFT" 40;
   letter-spacing: -0.015em;
   color: var(--white);
-  margin: 0 0 0.1rem;
+  margin: 0 0 0.7rem;
   line-height: 1.1;
 }
 
 /* Neither Fraunces nor Karla carries Hangul, so the browser would substitute
    whatever it likes. Naming the system Korean faces makes the fallback a
-   choice: 조실비아 sits a little quieter than the English name, as a second
-   reading of it rather than a subtitle. */
-.profile-card .profile-name-ko {
+   choice. Sized slightly up because Hangul at the same nominal size reads
+   smaller than Latin next to it. */
+.ko {
   font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR',
                'Nanum Gothic', sans-serif;
-  font-size: 1.02rem;
-  font-weight: 400;
-  letter-spacing: 0.06em;
-  color: rgba(255, 255, 255, 0.72);
-  margin: 0 0 0.5rem;
-  line-height: 1.2;
+  font-size: 1.04em;
+  letter-spacing: 0.02em;
 }
 
 .profile-card .profile-role {
@@ -684,17 +680,26 @@ body.menu-open #menu-backdrop { opacity: 1; visibility: visible; }
 .topic:last-of-type { margin-bottom: 0; }
 .topic[open] { border-color: var(--iris-light); box-shadow: 0 8px 22px rgba(64, 36, 92, 0.07); }
 
+/* WebKit stops toggling a <details> whose <summary> is display:flex or
+   display:grid -- the rows simply do not respond to a tap on iOS. So the
+   summary stays a block and an inner span carries the flex layout. */
 .topic-head {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
+  display: block;
   padding: 1rem 1.15rem;
   cursor: pointer;
   list-style: none;               /* Firefox */
   transition: background 0.16s;
+  -webkit-tap-highlight-color: rgba(111, 74, 161, 0.12);
 }
 
+.topic-head::marker { content: ""; }
 .topic-head::-webkit-details-marker { display: none; }   /* Safari */
+
+.topic-head-inner {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
 .topic-head:hover { background: var(--wash); }
 .topic-head:focus-visible { outline: 2px solid var(--iris); outline-offset: -3px; }
 
