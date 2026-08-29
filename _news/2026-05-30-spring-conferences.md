@@ -8,7 +8,8 @@ This spring took my research on voices from Vancouver to Philadelphia to Seoul �
 
 **April 30 — Vancouver.** I gave a talk titled *How early multilingual experience shapes voice quality production: evidence from Korean heritage speakers in Vancouver, BC* at the UBC Language Sciences 7th Annual Postdoctoral &amp; Graduate Research Day.
 
-**May 12 — Philadelphia.** I presented a poster, *Acoustic patterns of voice quality in Korean heritage speakers*, at the 190th Meeting of the Acoustical Society of America. Philadelphia turned out to be a very cool city! I also attended the ASA School, which was a genuine highlight: a few days of talks, hands-on sessions, and conversations with the coolest acousticians that sent me home with a long list of new things to try.
+**May 12 — Philadelphia.** I presented a poster, *Acoustic patterns of voice quality in Korean heritage speakers*, at the 190th Meeting of the Acoustical Society of America.
+Philadelphia turned out to be a *very cool* city! I also attended the ASA School, which was especially enjoyable and a genuine highlight of my graduate‑student career. Thanks to a few days of talks, hands‑on sessions, and conversations with the coolest, like‑minded acousticians that sent me home with a long list of new things to try.
 
 ![The ASA School 2026 group, cheering on the steps of a stone house in Philadelphia](/images/asa-school-2026.jpg)
 
