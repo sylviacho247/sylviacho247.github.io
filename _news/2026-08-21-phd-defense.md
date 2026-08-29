@@ -14,4 +14,8 @@ My dissertation, titled **Cross-language voice variation and talker identity in 
 
 My committee consisted of Dr. Henny Yeung (senior supervisor), Dr. Sara Ng (supervisor), Dr. Molly Babel (examiner), Dr. Adele Quigley-McBride (examiner), and Dr. Heather Bliss (chair).
 
+![Group photo taken after the defense, with committee members in the room and two more joining on the screen behind](/images/defense-committee.jpg)
+
+<p class="caption">After the defense, with my committee: some in the room and some on the screen.</p>
+
 I feel so blessed to reach this milestone. I am deeply grateful to my committee, to the participants who gave their time and their voices to this work, and to everyone who supported me along the way.
