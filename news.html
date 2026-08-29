@@ -37,7 +37,7 @@
   <div id="menu" aria-hidden="true">
     <button type="button" id="menu-close" class="menu-close" aria-label="Close menu">&times;</button>
     <p class="menu-name">Sylvia Cho</p>
-    <p class="menu-tag">A speech scientist decoding voices, sound patterns, and the science behind how we speak and hear across languages.</p>
+    <p class="menu-tag">Linguist, acoustician, fluent in fricatives.</p>
     <nav aria-label="Main">
       <a href="index.html">About</a>
       <a href="research.html">Research</a>
@@ -63,7 +63,14 @@
     <section class="section">
       <div class="wrap prose">
         <ul class="news">
-          {% assign items = site.news | sort: "date" | reverse %}
+          {%- comment -%}
+            Order by `posted:` (the day you added the item), newest first.
+            Anything without a `posted:` falls back to its event date and
+            sits below, so a file that forgets the field never jumps the queue.
+          {%- endcomment -%}
+          {% assign added = site.news | where_exp: "i", "i.posted" | sort: "posted" | reverse %}
+          {% assign rest = site.news | where_exp: "i", "i.posted == nil" | sort: "date" | reverse %}
+          {% assign items = added | concat: rest %}
           {% for item in items %}
           <li>
             <span class="news-date">{% if item.label %}{{ item.label }}{% else %}{{ item.date | date: "%b %Y" }}{% endif %}</span>
