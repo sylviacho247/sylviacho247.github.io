@@ -1,6 +1,6 @@
 ---
 title: "🎓 I successfully defended my PhD dissertation!"
-date: 2026-08-21
+date: 2026-08-28
 summary: "I passed my doctoral defense in Linguistics at Simon Fraser University!"
 ---
 
