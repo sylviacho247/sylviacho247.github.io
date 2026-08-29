@@ -10,7 +10,7 @@ My dissertation, titled *Cross-language voice variation and talker identity in K
 
 ![Diagram showing English and Korean prototypes sharing one phonetic space, with style and language as deviations from the norm](/images/defense-shared-space.png)
 
-<p class="caption">One shared space: a multilingual speaker's languages sit in a single phonetic system, and a voice is encoded as deviation from the norm.</p>
+<p class="caption">A slide from my defense illustrating the theoretical grounding of my dissertation.</p>
 
 My committee consisted of Dr. Henny Yeung (senior supervisor), Dr. Sara Ng (supervisor), Dr. Molly Babel (examiner), Dr. Adele Quigley-McBride (examiner), and Dr. Heather Bliss (chair).
 
