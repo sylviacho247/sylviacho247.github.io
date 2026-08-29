@@ -29,7 +29,7 @@
   --line:        #e6ddef;
   --white:       #ffffff;
 
-  --header-h:    3.75rem;
+  --header-h:    4.25rem;
   --wrap:        56rem;
 
   --display: 'Fraunces', 'Playfair Display', Georgia, 'Times New Roman', serif;
@@ -156,7 +156,7 @@ em, i { color: inherit; }
 
 #header .logo {
   font-family: var(--display);
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: 500;
   font-variation-settings: "opsz" 40, "SOFT" 30;
   color: var(--ink);
@@ -170,8 +170,8 @@ em, i { color: inherit; }
 
 .top-nav a {
   border: 0;
-  margin-left: 1.85rem;
-  font-size: 0.95rem;
+  margin-left: 1.45rem;
+  font-size: 1.5625rem;   /* 25px */
   font-weight: 500;
   color: var(--ink);
   position: relative;
@@ -200,9 +200,9 @@ em, i { color: inherit; }
   border: 0;
   cursor: pointer;
   font-family: var(--text);
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   font-weight: 700;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
   color: var(--ink);
 }
@@ -272,7 +272,7 @@ body.menu-open #menu-backdrop { opacity: 1; visibility: visible; }
 
 #menu .menu-name {
   font-family: var(--display);
-  font-size: 1.55rem;
+  font-size: 1.8rem;
   font-weight: 500;
   font-variation-settings: "opsz" 60, "SOFT" 40;
   color: var(--white);
@@ -280,7 +280,7 @@ body.menu-open #menu-backdrop { opacity: 1; visibility: visible; }
 }
 
 #menu .menu-tag {
-  font-size: 0.9rem;
+  font-size: 1rem;
   line-height: 1.55;
   color: rgba(255, 255, 255, 0.72);
   margin-bottom: 1.5rem;
@@ -294,9 +294,9 @@ body.menu-open #menu-backdrop { opacity: 1; visibility: visible; }
   border: 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
   color: var(--white);
-  font-size: 0.95rem;
+  font-size: 1.12rem;
   font-weight: 700;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
@@ -319,6 +319,7 @@ body.menu-open #menu-backdrop { opacity: 1; visibility: visible; }
   padding-top: 1.75rem;
   font-size: 0.85rem;
   color: rgba(255, 255, 255, 0.7);
+  font-size: 0.95rem;
 }
 
 #menu .menu-contact a {
@@ -892,10 +893,10 @@ body.menu-open #menu-backdrop { opacity: 1; visibility: visible; }
 }
 
 @media screen and (min-width: 56em) {
-  :root { --header-h: 4.25rem; }
+  :root { --header-h: 5.1rem; }
 
-  #header { padding: 0 2.5rem; }
-  #header .logo { font-size: 1.45rem; }
+  #header { padding: 0 2rem; }
+  #header .logo { font-size: 1.75rem; }
 
   .top-nav { display: flex; align-items: center; }
   .menu-toggle { display: none; }
@@ -918,7 +919,13 @@ body.menu-open #menu-backdrop { opacity: 1; visibility: visible; }
   /* Photo column sits on the right, About Me leads on the left. Done with
      `order` rather than by moving the markup, so phones keep stacking the
      portrait first. */
-  .profile { grid-template-columns: 1fr 17rem; gap: 3rem; }
+  .profile {
+    grid-template-columns: 1fr 17rem;
+    gap: 3rem;
+    /* Centre the bio against the taller photo column instead of
+       hanging it from the top. */
+    align-items: center;
+  }
   .profile-about { order: 1; }
   .profile-card { order: 2; }
   .profile-about h2 { font-size: 2.1rem; }
