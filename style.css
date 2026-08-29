@@ -663,6 +663,140 @@ body.menu-open #menu-backdrop { opacity: 1; visibility: visible; }
 
 .card ul li:last-child { margin-bottom: 0; }
 
+/* --- Research topics: expandable rows ------------------------------------
+   Built on <details>/<summary> rather than JavaScript. Native gives us
+   keyboard support and the open/close state for free -- and, importantly,
+   browsers expand a closed <details> when find-in-page matches text inside
+   it, so collapsing the page costs nothing in searchability.
+   -------------------------------------------------------------------------- */
+
+.figdefs { position: absolute; width: 0; height: 0; overflow: hidden; }
+
+.topic {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.topic:last-of-type { margin-bottom: 0; }
+.topic[open] { border-color: var(--iris-light); box-shadow: 0 8px 22px rgba(64, 36, 92, 0.07); }
+
+.topic-head {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.15rem;
+  cursor: pointer;
+  list-style: none;               /* Firefox */
+  transition: background 0.16s;
+}
+
+.topic-head::-webkit-details-marker { display: none; }   /* Safari */
+.topic-head:hover { background: var(--wash); }
+.topic-head:focus-visible { outline: 2px solid var(--iris); outline-offset: -3px; }
+
+.topic-thumb {
+  flex: none;
+  width: 7.5rem;
+  height: 4.1rem;
+  padding: 0.3rem 0.4rem;
+  background: var(--wash);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.topic-thumb svg { display: block; width: 100%; height: auto; max-height: 100%; }
+
+.topic-text { flex: 1; min-width: 0; }
+
+.topic-title {
+  display: block;
+  font-family: var(--display);
+  font-size: 1.28rem;
+  font-weight: 500;
+  font-variation-settings: "opsz" 48, "SOFT" 30;
+  color: var(--ink);
+  line-height: 1.25;
+  margin: 0.15rem 0 0.2rem;
+}
+
+.topic-line {
+  display: block;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--body-fg);
+}
+
+/* The card-label already renders as a flex row with its amber dot. */
+.topic-head .card-label { margin-bottom: 0; }
+
+.chev {
+  flex: none;
+  width: 0.55rem;
+  height: 0.55rem;
+  margin-right: 0.2rem;
+  border-right: 2px solid var(--iris-light);
+  border-bottom: 2px solid var(--iris-light);
+  transform: rotate(45deg);
+  transition: transform 0.22s;
+}
+
+.topic[open] .chev { transform: rotate(-135deg); }
+
+.topic-body {
+  padding: 0 1.15rem 1.35rem;
+  border-top: 1px solid var(--line);
+  margin-top: -1px;
+}
+
+.topic-body > p:first-of-type { margin-top: 1.1rem; }
+
+/* The lists inside a topic keep the card styling they already had. */
+.topic-body ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 1.1rem 0 0;
+  border-top: 1px solid var(--line);
+  padding-top: 0.95rem;
+}
+
+.topic-body ul li {
+  position: relative;
+  padding-left: 1.1rem;
+  margin-bottom: 0.7rem;
+  font-size: 0.98rem;
+  line-height: 1.55;
+}
+
+.topic-body ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.6em;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--iris-light);
+}
+
+.topic-body ul li:last-child { margin-bottom: 0; }
+
+@media (max-width: 34rem) {
+  .topic-thumb { display: none; }
+  .topic-head { gap: 0.75rem; padding: 0.95rem 1rem; }
+  .topic-body { padding: 0 1rem 1.2rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .topic, .topic-head, .chev { transition: none; }
+}
+
 /* --- Research figures ---------------------------------------------------
    The SVGs are written inline in the page rather than linked as <img>, so
    they inherit Karla from the stylesheet, stay crisp at any zoom or pixel
