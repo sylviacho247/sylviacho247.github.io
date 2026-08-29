@@ -398,6 +398,25 @@ body.menu-open #menu-backdrop { opacity: 1; visibility: visible; }
   margin-bottom: 0.35rem;
 }
 
+/* A single news post: the title carries the page, the date sits under it */
+#banner.banner--post h1 {
+  font-size: clamp(2.1rem, 8vw, 3.15rem);
+  max-width: 46rem;
+  margin: 0 auto 0.9rem;
+}
+
+.post-meta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.55rem;
+  margin: 0;
+  font-size: 1.02rem;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.post-meta span[aria-hidden] { color: var(--amber); }
+
 .banner-links {
   display: flex;
   flex-wrap: wrap;
@@ -696,10 +715,9 @@ body.menu-open #menu-backdrop { opacity: 1; visibility: visible; }
 .news li:last-child { border-bottom: 0; }
 
 .news .news-date {
-  font-size: 0.76rem;
+  font-size: 0.95rem;
   font-weight: 700;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
+  letter-spacing: 0.06em;
   color: var(--amber-ink);
   font-variant-numeric: tabular-nums;
 }
@@ -714,7 +732,7 @@ body.menu-open #menu-backdrop { opacity: 1; visibility: visible; }
 .news .news-title {
   display: block;
   font-family: var(--display);
-  font-size: 1.2rem;
+  font-size: 1.45rem;
   font-weight: 500;
   font-variation-settings: "opsz" 48, "SOFT" 30;
   line-height: 1.3;
@@ -875,8 +893,12 @@ body.menu-open #menu-backdrop { opacity: 1; visibility: visible; }
   .profile { grid-template-columns: 17rem 1fr; gap: 3rem; }
   .profile-about h2 { font-size: 2.1rem; }
 
-  .news li { grid-template-columns: 8rem 1fr; gap: 1.5rem; align-items: baseline; }
+  .news li { grid-template-columns: 9rem 1fr; gap: 1.75rem; align-items: baseline; }
   .news .news-date { text-align: right; }
+  .news .news-title { font-size: 1.6rem; }
+
+  #banner.banner--post h1 { margin-bottom: 1.1rem; }
+  .post-meta { font-size: 1.08rem; }
 
   .wave { height: 4.25rem; }
 
