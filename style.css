@@ -913,7 +913,12 @@ body.menu-open #menu-backdrop { opacity: 1; visibility: visible; }
 
   #banner .portrait { width: 17rem; height: 17rem; }
 
-  .profile { grid-template-columns: 17rem 1fr; gap: 3rem; }
+  /* Photo column sits on the right, About Me leads on the left. Done with
+     `order` rather than by moving the markup, so phones keep stacking the
+     portrait first. */
+  .profile { grid-template-columns: 1fr 17rem; gap: 3rem; }
+  .profile-about { order: 1; }
+  .profile-card { order: 2; }
   .profile-about h2 { font-size: 2.1rem; }
 
   .news li { grid-template-columns: 9rem 1fr; gap: 1.75rem; align-items: baseline; }
