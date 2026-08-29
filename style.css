@@ -170,8 +170,8 @@ em, i { color: inherit; }
 
 .top-nav a {
   border: 0;
-  margin-left: 1.45rem;
-  font-size: 1.5625rem;   /* 25px */
+  margin-left: 1.65rem;
+  font-size: 1.3125rem;   /* 21px */
   font-weight: 500;
   color: var(--ink);
   position: relative;
