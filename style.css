@@ -787,14 +787,17 @@ body.menu-open #menu-backdrop { opacity: 1; visibility: visible; }
   font-style: italic;
 }
 
-/* Images in a post — slides, figures, photos */
+/* Images in a post — slides, figures, photos.
+   Capped well below the text measure so a picture punctuates the prose
+   instead of dominating it. Phones still get the full column width. */
 .post img {
   width: 100%;
+  max-width: 28rem;
   height: auto;
   border: 1px solid var(--line);
   border-radius: 4px;
   box-shadow: 0 8px 24px rgba(64, 36, 92, 0.10);
-  margin: 0.4rem 0 0.2rem;
+  margin: 0.4rem auto 0.2rem;
 }
 
 /* A paragraph that is only an image gets extra room around it */
@@ -803,11 +806,12 @@ body.menu-open #menu-backdrop { opacity: 1; visibility: visible; }
 /* Image caption. Write it in the news file as:
    <p class="caption">Your caption here.</p>   */
 .post .caption {
+  max-width: 28rem;      /* line up with the image above it */
+  margin: 0.1rem auto 1.6rem;   /* breathing room before the next paragraph */
   font-size: 0.92rem;
   line-height: 1.5;
   color: var(--muted);
   font-style: italic;
-  margin-top: 0.1rem;
 }
 
 .post-back {
