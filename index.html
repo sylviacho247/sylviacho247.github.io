@@ -1,3 +1,8 @@
+---
+# This empty block tells Jekyll to build this page, which is what lets the
+# Recent News list below be generated from the files in the _news folder.
+# Do not delete it.
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -84,34 +89,27 @@
 
     <!-- ===================================================================
          RECENT NEWS
-         To add an item, copy one <li> block and change the date and text.
-         Newest goes at the top. Delete any you don't want.
-         The three below are placeholders — replace them with your own.
+         This list is generated from the files in the _news folder.
+         To add an item, add a file there — you never edit this block.
+         See _news/2026-08-01-example.md for the format.
          =================================================================== -->
+    {% if site.news.size > 0 %}
     <section class="section">
       <div class="wrap prose">
         <p class="section-title">Updates</p>
         <h2 class="section-heading">Recent News</h2>
         <ul class="news">
-
+          {% assign items = site.news | sort: "date" | reverse %}
+          {% for item in items limit: site.news_limit %}
           <li>
-            <span class="news-date">Aug 2026</span>
-            <span class="news-body">Placeholder — replace me with your latest update.</span>
+            <span class="news-date">{% if item.label %}{{ item.label }}{% else %}{{ item.date | date: "%b %Y" }}{% endif %}</span>
+            <span class="news-body">{{ item.content | markdownify }}</span>
           </li>
-
-          <li>
-            <span class="news-date">Jul 2026</span>
-            <span class="news-body">Placeholder — e.g. a new course, talk, or paper.</span>
-          </li>
-
-          <li>
-            <span class="news-date">2024</span>
-            <span class="news-body">New publication with Diep, Shamei, Liu &amp; Gick: <a href="https://jcaa.caa-aca.ca/index.php/jcaa/article/view/4190/3668" target="_blank" rel="noopener">Comparing speech to fine and gross motor skills in Parkinson’s patients</a>, in the <i>Journal of the Canadian Acoustical Association</i>.</span>
-          </li>
-
+          {% endfor %}
         </ul>
       </div>
     </section>
+    {% endif %}
 
     <section class="section section--wash">
       <div class="wrap prose">

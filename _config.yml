@@ -1,2 +1,25 @@
-Title: Sylvia Cho
-Theme: jekyll-theme-hydeout
+# Jekyll configuration for sylviacho247.github.io
+#
+# The only thing this does is register the _news folder as a "collection",
+# so each file in _news/ becomes an item in the Recent News list on the
+# home page. Everything else on the site is plain HTML and is copied
+# through untouched.
+#
+# Note: no `theme:` key. The site uses its own style.css.
+
+title: Sylvia Cho
+description: Speech scientist and sessional lecturer in Linguistics at the University of British Columbia.
+url: https://sylviacho247.github.io
+
+collections:
+  news:
+    output: false # news items appear on the home page; they get no page of their own
+
+# How many news items to show on the home page.
+# Change this number and the list grows or shrinks.
+news_limit: 6
+
+exclude:
+  - README.md
+  - License.MD
+  - workflows

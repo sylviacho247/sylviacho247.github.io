@@ -706,6 +706,10 @@ body.menu-open #menu-backdrop { opacity: 1; visibility: visible; }
 
 .news .news-body { font-size: 1.0625rem; line-height: 1.62; }
 
+/* Markdown from _news arrives wrapped in <p>; keep the item tight */
+.news .news-body p { margin: 0 0 0.55rem; }
+.news .news-body p:last-child { margin-bottom: 0; }
+
 /* --- CV ----------------------------------------------------------------- */
 
 .pdf-embed { display: none; }
