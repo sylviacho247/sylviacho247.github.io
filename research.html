@@ -2,47 +2,111 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Research — Sylvia Cho</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Research at the intersection of phonetics, multilingualism, speech science, and applied linguistics.">
   <link rel="icon" href="favicon-32x32.png" type="image/png">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="menu.js" defer></script>
 </head>
 <body>
-  <div class="container">
-    <nav id="sidebar">
-      <h2 class="custom-font-heading">Sylvia Cho</h2>
-      <p class="sidebar-intro">A speech scientist decoding voices, sound patterns, and the science behind how we speak and hear across languages.</p>
-      <a href="index.html">Home</a>
+
+  <header id="header">
+    <a href="index.html" class="logo">Sylvia Cho</a>
+    <nav class="top-nav" aria-label="Main">
+      <a href="index.html">About</a>
+      <a href="research.html" class="active">Research</a>
+      <a href="cv.html">CV</a>
+      <a href="funfacts.html">Fun facts</a>
+    </nav>
+    <button type="button" id="menu-toggle" class="menu-toggle" aria-expanded="false" aria-controls="menu">
+      Menu
+      <span class="bars" aria-hidden="true"><span></span><span></span><span></span></span>
+    </button>
+  </header>
+
+  <div id="menu-backdrop"></div>
+
+  <div id="menu" aria-hidden="true">
+    <button type="button" id="menu-close" class="menu-close" aria-label="Close menu">&times;</button>
+    <p class="menu-name">Sylvia Cho</p>
+    <p class="menu-tag">A speech scientist decoding voices, sound patterns, and the science behind how we speak and hear across languages.</p>
+    <nav aria-label="Main">
+      <a href="index.html">About</a>
       <a href="research.html" class="active">Research</a>
       <a href="cv.html">CV</a>
       <a href="funfacts.html">Fun facts about me</a>
-      <footer>  © 2026. Sylvia Cho. <a href="License.MD" style="display: inline;">MIT License</a></footer>
     </nav>
-
-    <main class="content">
-      <h2>Research Interests</h2>
-
-      <p>My research lies at the intersection of phonetics, multilingualism, speech science, and applied linguistics.</p>
-
-<ol>
-  <li><strong>Multilingualism:</strong> One of my main research interests concerns how multilingualism influences voice quality, articulatory gestures, speech perception and production (including both categorical and within-category dimensions), sound change, and language acquisition. I am particularly interested in how multilingual speakers navigate and manage distinct phonetic and phonological systems across languages.
-    <ul>
-      <li>Selected presentation: <a href="https://doi.org/10.1121/10.0023267" target="_blank"><b>Cho</b> (2023) – What does it mean to sound Korean-Canadian, eh? A comparative study on Canadian English vowel space </a></li>
-      <li>Selected publication: <a href="https://doi.org/10.1121/10.0001140" target="_blank"><b>Cho</b>, Jongman, Wang & Sereno (2020) – Multi-modal cross-linguistic perception of fricatives in clear speech</a></li>
-      <li>Selected publication: <a href="https://conference.wdc-jp.com/psj/2017/common/doc/P07.pdf" target="_blank"><b>Cho</b> & Munro (2017) – F0, long-term formants and LTAS in Korean-English Bilinguals</a></li>
-    </ul></li><br>
-  <li><strong>Speech Disorders:</strong> I am interested in how speech disorders — for example, neurodegenerative conditions such as Parkinson’s disease — affect articulation and voice quality. I am also interested in the relationship between speech and other motor domains, such as fine and gross motor control, and how these systems interact in both healthy and clinical populations.
-    <ul>
-      <li>Selected publication: <a href="https://jcaa.caa-aca.ca/index.php/jcaa/article/view/4190/3668" target="_blank">Diep, <b>Cho</b>, Shamei, Liu & Gick (2024) – Comparing speech to fine and gross motor skills in Parkinson’s patients</a></li>
-    </ul>
-  </li><br>
-<li><strong>Applied Phonetics:</strong> I aim to bridge the gap between linguistic theory and real-world practices by exploring how insights from phonetic research can be translated into effective tools for pronunciation instruction, forensic linguistics, and speech-based AI technologies.
-  <ul>
-    <li>Selected presentation: <a href="https://www.sfu.ca/fass/undergrad/future/high-school-visits/fass-in-class/presentations/linguistics-language-science.html" target="_blank"><b>Cho</b> – Linguistics in the World! The Science Behind Language: A Uniquely Human Ability</a></li>
-  </ul>
-</li>
-</ol>
-    </main>
+    <p class="menu-contact">sylvia.cho (at) ubc.ca</p>
   </div>
+
+  <section id="banner" class="banner--slim">
+    <p class="eyebrow">Research</p>
+    <h1>Research Interests</h1>
+    <p class="tagline">Phonetics, multilingualism, speech science, and applied linguistics.</p>
+  <div class="wave" aria-hidden="true">
+    <svg viewBox="0 0 1200 100" preserveAspectRatio="none" role="presentation" focusable="false">
+      <rect x="3.6" y="21.1" width="5.2" height="57.8" rx="2.6" fill="#ffffff" opacity="0.34"/><rect x="16.1" y="16.4" width="5.2" height="67.2" rx="2.6" fill="#e2a03f" opacity="0.85"/><rect x="28.6" y="8.6" width="5.2" height="82.8" rx="2.6" fill="#e2a03f" opacity="0.85"/><rect x="41.1" y="15.3" width="5.2" height="69.5" rx="2.6" fill="#e2a03f" opacity="0.85"/><rect x="53.6" y="15.4" width="5.2" height="69.3" rx="2.6" fill="#e2a03f" opacity="0.85"/><rect x="66.1" y="16.0" width="5.2" height="67.9" rx="2.6" fill="#e2a03f" opacity="0.85"/><rect x="78.6" y="24.0" width="5.2" height="52.0" rx="2.6" fill="#ffffff" opacity="0.34"/><rect x="91.1" y="21.8" width="5.2" height="56.4" rx="2.6" fill="#ffffff" opacity="0.34"/><rect x="103.6" y="22.2" width="5.2" height="55.7" rx="2.6" fill="#ffffff" opacity="0.34"/><rect x="116.1" y="21.1" width="5.2" height="57.7" rx="2.6" fill="#ffffff" opacity="0.34"/><rect x="128.6" y="29.0" width="5.2" height="41.9" rx="2.6" fill="#ffffff" opacity="0.22"/><rect x="141.1" y="25.6" width="5.2" height="48.7" rx="2.6" fill="#ffffff" opacity="0.34"/><rect x="153.6" y="26.9" width="5.2" height="46.2" rx="2.6" fill="#ffffff" opacity="0.34"/><rect x="166.1" y="15.9" width="5.2" height="68.3" rx="2.6" fill="#e2a03f" opacity="0.85"/><rect x="178.6" y="16.1" width="5.2" height="67.9" rx="2.6" fill="#e2a03f" opacity="0.85"/><rect x="191.1" y="24.7" width="5.2" height="50.5" rx="2.6" fill="#ffffff" opacity="0.34"/><rect x="203.6" y="11.3" width="5.2" height="77.3" rx="2.6" fill="#e2a03f" opacity="0.85"/><rect x="216.1" y="12.4" width="5.2" height="75.2" rx="2.6" fill="#e2a03f" opacity="0.85"/><rect x="228.6" y="17.8" width="5.2" height="64.5" rx="2.6" fill="#ffffff" opacity="0.34"/><rect x="241.1" y="19.1" width="5.2" height="61.8" rx="2.6" fill="#ffffff" opacity="0.34"/><rect x="253.6" y="25.4" width="5.2" height="49.3" rx="2.6" fill="#ffffff" opacity="0.34"/><rect x="266.1" y="26.8" width="5.2" height="46.4" rx="2.6" fill="#ffffff" opacity="0.34"/><rect x="278.6" y="18.6" width="5.2" height="62.8" rx="2.6" fill="#ffffff" opacity="0.34"/><rect x="291.1" y="23.6" width="5.2" height="52.7" rx="2.6" fill="#ffffff" opacity="0.34"/><rect x="303.6" y="20.0" width="5.2" height="60.1" rx="2.6" fill="#ffffff" opacity="0.34"/><rect x="316.1" y="17.7" width="5.2" height="64.6" rx="2.6" fill="#ffffff" opacity="0.34"/><rect x="328.6" y="20.7" width="5.2" height="58.7" rx="2.6" fill="#ffffff" opacity="0.34"/><rect x="341.1" y="14.0" width="5.2" height="72.0" rx="2.6" fill="#e2a03f" opacity="0.85"/><rect x="353.6" y="16.4" width="5.2" height="67.2" rx="2.6" fill="#e2a03f" opacity="0.85"/><rect x="366.1" y="14.0" width="5.2" height="71.9" rx="2.6" fill="#e2a03f" opacity="0.85"/><rect x="378.6" y="22.9" width="5.2" height="54.1" rx="2.6" fill="#ffffff" opacity="0.34"/><rect x="391.1" y="26.4" width="5.2" height="47.1" rx="2.6" fill="#ffffff" opacity="0.34"/><rect x="403.6" y="32.3" width="5.2" height="35.5" rx="2.6" fill="#ffffff" opacity="0.22"/><rect x="416.1" y="34.9" width="5.2" height="30.2" rx="2.6" fill="#ffffff" opacity="0.22"/><rect x="428.6" y="38.7" width="5.2" height="22.5" rx="2.6" fill="#ffffff" opacity="0.22"/><rect x="441.1" y="41.0" width="5.2" height="18.1" rx="2.6" fill="#ffffff" opacity="0.22"/><rect x="453.6" y="38.2" width="5.2" height="23.6" rx="2.6" fill="#ffffff" opacity="0.22"/><rect x="466.1" y="38.0" width="5.2" height="24.1" rx="2.6" fill="#ffffff" opacity="0.22"/><rect x="478.6" y="38.2" width="5.2" height="23.6" rx="2.6" fill="#ffffff" opacity="0.22"/><rect x="491.1" y="38.6" width="5.2" height="22.8" rx="2.6" fill="#ffffff" opacity="0.22"/><rect x="503.6" y="40.7" width="5.2" height="18.6" rx="2.6" fill="#ffffff" opacity="0.22"/><rect x="516.1" y="41.7" width="5.2" height="16.5" rx="2.6" fill="#ffffff" opacity="0.22"/><rect x="528.6" y="42.5" width="5.2" height="15.1" rx="2.6" fill="#ffffff" opacity="0.22"/><rect x="541.1" y="44.1" width="5.2" height="11.8" rx="2.6" fill="#ffffff" opacity="0.22"/><rect x="553.6" y="42.5" width="5.2" height="15.1" rx="2.6" fill="#ffffff" opacity="0.22"/><rect x="566.1" y="43.4" width="5.2" height="13.3" rx="2.6" fill="#ffffff" opacity="0.22"/><rect x="578.6" y="40.5" width="5.2" height="19.0" rx="2.6" fill="#ffffff" opacity="0.22"/><rect x="591.1" y="40.1" width="5.2" height="19.8" rx="2.6" fill="#ffffff" opacity="0.22"/><rect x="603.6" y="33.9" width="5.2" height="32.3" rx="2.6" fill="#ffffff" opacity="0.22"/><rect x="616.1" y="30.9" width="5.2" height="38.3" rx="2.6" fill="#ffffff" opacity="0.22"/><rect x="628.6" y="35.0" width="5.2" height="30.1" rx="2.6" fill="#ffffff" opacity="0.22"/><rect x="641.1" y="31.4" width="5.2" height="37.3" rx="2.6" fill="#ffffff" opacity="0.22"/><rect x="653.6" y="23.5" width="5.2" height="52.9" rx="2.6" fill="#ffffff" opacity="0.34"/><rect x="666.1" y="28.4" width="5.2" height="43.2" rx="2.6" fill="#ffffff" opacity="0.34"/><rect x="678.6" y="25.3" width="5.2" height="49.5" rx="2.6" fill="#ffffff" opacity="0.34"/><rect x="691.1" y="32.8" width="5.2" height="34.4" rx="2.6" fill="#ffffff" opacity="0.22"/><rect x="703.6" y="37.4" width="5.2" height="25.2" rx="2.6" fill="#ffffff" opacity="0.22"/><rect x="716.1" y="35.6" width="5.2" height="28.7" rx="2.6" fill="#ffffff" opacity="0.22"/><rect x="728.6" y="36.0" width="5.2" height="27.9" rx="2.6" fill="#ffffff" opacity="0.22"/><rect x="741.1" y="38.9" width="5.2" height="22.2" rx="2.6" fill="#ffffff" opacity="0.22"/><rect x="753.6" y="39.0" width="5.2" height="22.0" rx="2.6" fill="#ffffff" opacity="0.22"/><rect x="766.1" y="35.6" width="5.2" height="28.8" rx="2.6" fill="#ffffff" opacity="0.22"/><rect x="778.6" y="28.1" width="5.2" height="43.8" rx="2.6" fill="#ffffff" opacity="0.34"/><rect x="791.1" y="26.9" width="5.2" height="46.3" rx="2.6" fill="#ffffff" opacity="0.34"/><rect x="803.6" y="31.0" width="5.2" height="38.0" rx="2.6" fill="#ffffff" opacity="0.22"/><rect x="816.1" y="28.2" width="5.2" height="43.5" rx="2.6" fill="#ffffff" opacity="0.34"/><rect x="828.6" y="29.1" width="5.2" height="41.9" rx="2.6" fill="#ffffff" opacity="0.22"/><rect x="841.1" y="29.1" width="5.2" height="41.8" rx="2.6" fill="#ffffff" opacity="0.22"/><rect x="853.6" y="19.9" width="5.2" height="60.2" rx="2.6" fill="#ffffff" opacity="0.34"/><rect x="866.1" y="26.7" width="5.2" height="46.6" rx="2.6" fill="#ffffff" opacity="0.34"/><rect x="878.6" y="20.6" width="5.2" height="58.8" rx="2.6" fill="#ffffff" opacity="0.34"/><rect x="891.1" y="19.9" width="5.2" height="60.1" rx="2.6" fill="#ffffff" opacity="0.34"/><rect x="903.6" y="21.0" width="5.2" height="57.9" rx="2.6" fill="#ffffff" opacity="0.34"/><rect x="916.1" y="9.2" width="5.2" height="81.6" rx="2.6" fill="#e2a03f" opacity="0.85"/><rect x="928.6" y="16.6" width="5.2" height="66.8" rx="2.6" fill="#ffffff" opacity="0.34"/><rect x="941.1" y="7.0" width="5.2" height="86.0" rx="2.6" fill="#e2a03f" opacity="0.85"/><rect x="953.6" y="13.6" width="5.2" height="72.7" rx="2.6" fill="#e2a03f" opacity="0.85"/><rect x="966.1" y="7.7" width="5.2" height="84.6" rx="2.6" fill="#e2a03f" opacity="0.85"/><rect x="978.6" y="13.2" width="5.2" height="73.6" rx="2.6" fill="#e2a03f" opacity="0.85"/><rect x="991.1" y="14.7" width="5.2" height="70.7" rx="2.6" fill="#e2a03f" opacity="0.85"/><rect x="1003.6" y="7.0" width="5.2" height="86.0" rx="2.6" fill="#e2a03f" opacity="0.85"/><rect x="1016.1" y="13.9" width="5.2" height="72.3" rx="2.6" fill="#e2a03f" opacity="0.85"/><rect x="1028.6" y="24.3" width="5.2" height="51.4" rx="2.6" fill="#ffffff" opacity="0.34"/><rect x="1041.1" y="20.2" width="5.2" height="59.5" rx="2.6" fill="#ffffff" opacity="0.34"/><rect x="1053.6" y="29.5" width="5.2" height="41.0" rx="2.6" fill="#ffffff" opacity="0.22"/><rect x="1066.1" y="28.3" width="5.2" height="43.5" rx="2.6" fill="#ffffff" opacity="0.34"/><rect x="1078.6" y="23.5" width="5.2" height="53.0" rx="2.6" fill="#ffffff" opacity="0.34"/><rect x="1091.1" y="25.3" width="5.2" height="49.5" rx="2.6" fill="#ffffff" opacity="0.34"/><rect x="1103.6" y="30.7" width="5.2" height="38.6" rx="2.6" fill="#ffffff" opacity="0.22"/><rect x="1116.1" y="21.4" width="5.2" height="57.2" rx="2.6" fill="#ffffff" opacity="0.34"/><rect x="1128.6" y="30.3" width="5.2" height="39.4" rx="2.6" fill="#ffffff" opacity="0.22"/><rect x="1141.1" y="31.1" width="5.2" height="37.9" rx="2.6" fill="#ffffff" opacity="0.22"/><rect x="1153.6" y="28.1" width="5.2" height="43.8" rx="2.6" fill="#ffffff" opacity="0.34"/><rect x="1166.1" y="33.6" width="5.2" height="32.8" rx="2.6" fill="#ffffff" opacity="0.22"/><rect x="1178.6" y="35.0" width="5.2" height="30.0" rx="2.6" fill="#ffffff" opacity="0.22"/><rect x="1191.1" y="37.1" width="5.2" height="25.9" rx="2.6" fill="#ffffff" opacity="0.22"/>
+    </svg>
+  </div>
+  </section>
+
+  <main>
+
+    <section class="section">
+      <div class="wrap prose">
+        <p class="lede">My research lies at the intersection of phonetics, multilingualism, speech science, and applied linguistics.</p>
+
+        <div class="card">
+          <span class="card-label">Voice &amp; sound systems</span>
+          <h3>Multilingualism</h3>
+          <p>One of my main research interests concerns how multilingualism influences voice quality, articulatory gestures, speech perception and production (including both categorical and within-category dimensions), sound change, and language acquisition. I am particularly interested in how multilingual speakers navigate and manage distinct phonetic and phonological systems across languages.</p>
+          <ul>
+            <li>Selected presentation: <a href="https://doi.org/10.1121/10.0023267" target="_blank" rel="noopener"><b>Cho</b> (2023) — What does it mean to sound Korean-Canadian, eh? A comparative study on Canadian English vowel space</a></li>
+            <li>Selected publication: <a href="https://doi.org/10.1121/10.0001140" target="_blank" rel="noopener"><b>Cho</b>, Jongman, Wang &amp; Sereno (2020) — Multi-modal cross-linguistic perception of fricatives in clear speech</a></li>
+            <li>Selected publication: <a href="https://conference.wdc-jp.com/psj/2017/common/doc/P07.pdf" target="_blank" rel="noopener"><b>Cho</b> &amp; Munro (2017) — F0, long-term formants and LTAS in Korean-English Bilinguals</a></li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <span class="card-label">Speech &amp; motor control</span>
+          <h3>Speech Disorders</h3>
+          <p>I am interested in how speech disorders — for example, neurodegenerative conditions such as Parkinson’s disease — affect articulation and voice quality. I am also interested in the relationship between speech and other motor domains, such as fine and gross motor control, and how these systems interact in both healthy and clinical populations.</p>
+          <ul>
+            <li>Selected publication: <a href="https://jcaa.caa-aca.ca/index.php/jcaa/article/view/4190/3668" target="_blank" rel="noopener">Diep, <b>Cho</b>, Shamei, Liu &amp; Gick (2024) — Comparing speech to fine and gross motor skills in Parkinson’s patients</a></li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <span class="card-label">Theory into practice</span>
+          <h3>Applied Phonetics</h3>
+          <p>I aim to bridge the gap between linguistic theory and real-world practices by exploring how insights from phonetic research can be translated into effective tools for pronunciation instruction, forensic linguistics, and speech-based AI technologies.</p>
+          <ul>
+            <li>Selected presentation: <a href="https://www.sfu.ca/fass/undergrad/future/high-school-visits/fass-in-class/presentations/linguistics-language-science.html" target="_blank" rel="noopener"><b>Cho</b> — Linguistics in the World! The Science Behind Language: A Uniquely Human Ability</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer">
+    <div class="wrap">
+      <p class="footer-name">Sylvia Cho</p>
+      <p>Department of Linguistics, University of British Columbia</p>
+      <nav aria-label="Footer">
+        <a href="index.html">About</a>
+        <a href="research.html">Research</a>
+        <a href="cv.html">CV</a>
+        <a href="funfacts.html">Fun facts about me</a>
+      </nav>
+      <p class="copyright">© 2026 Sylvia Cho. Layout adapted from <a href="https://html5up.net/forty" target="_blank" rel="noopener">Forty</a> by <a href="https://html5up.net" target="_blank" rel="noopener">HTML5 UP</a> (CC BY 3.0).</p>
+    </div>
+  </footer>
+
 </body>
 </html>
