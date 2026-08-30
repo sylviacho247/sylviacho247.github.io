@@ -842,6 +842,37 @@ body.menu-open #menu-backdrop { opacity: 1; visibility: visible; }
 
 .figure figcaption b { color: var(--iris); font-weight: 700; }
 
+/* A line of "what this study actually did", sitting between the topic prose
+   and the figure it introduces. Quieter than the paragraph above it so the
+   two do not read as one block of text. */
+.fig-lead {
+  max-width: 44rem;
+  margin: 1.6rem 0 0;
+  padding-top: 1.3rem;
+  font-size: 0.99rem;
+  line-height: 1.6;
+  color: var(--body-fg);
+  /* The rule belongs above the sentence that opens a study, not between that
+     sentence and its figure -- otherwise it separates a study from its own
+     picture instead of from the study before it. */
+  border-top: 1px solid var(--line);
+}
+
+/* A paragraph that starts a new thought after a figure gets the same rule
+   the figure leads do, so the sections read as separated blocks. */
+.topic-body > p.ruled {
+  margin-top: 1.6rem;
+  padding-top: 1.3rem;
+  border-top: 1px solid var(--line);
+}
+
+/* ...which means the figure right after a lead must not draw one too. */
+.fig-lead + .figure {
+  margin-top: 0.85rem;
+  padding-top: 0;
+  border-top: 0;
+}
+
 /* Captions run in three parts: what the figure is, where it came from, then
    what it shows. The first two get their own lines so the eye can skip them
    and land on the description. */
