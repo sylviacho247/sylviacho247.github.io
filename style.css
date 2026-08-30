@@ -272,11 +272,13 @@ body.menu-open #menu-backdrop { opacity: 1; visibility: visible; }
 
 #menu .menu-name {
   font-family: var(--display);
-  font-size: 1.8rem;
+  font-size: clamp(1.95rem, 7vw, 2.4rem);
   font-weight: 500;
-  font-variation-settings: "opsz" 60, "SOFT" 40;
+  font-variation-settings: "opsz" 144, "SOFT" 40;
+  letter-spacing: -0.015em;
+  line-height: 1.1;
   color: var(--white);
-  margin: 0.25rem 0 0.35rem;
+  margin: 0.25rem 0 0.5rem;
 }
 
 #menu .menu-tag {
