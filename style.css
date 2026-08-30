@@ -847,23 +847,25 @@ body.menu-open #menu-backdrop { opacity: 1; visibility: visible; }
    two do not read as one block of text. */
 .fig-lead {
   max-width: 44rem;
-  margin: 1.6rem 0 0;
-  padding-top: 1.3rem;
+  margin: 2.4rem 0 0;
+  padding-top: 1.75rem;
   font-size: 0.99rem;
   line-height: 1.6;
   color: var(--body-fg);
   /* The rule belongs above the sentence that opens a study, not between that
      sentence and its figure -- otherwise it separates a study from its own
-     picture instead of from the study before it. */
-  border-top: 1px solid var(--line);
+     picture instead of from the study before it. Drawn a shade darker than
+     --line and given real space either side: at hairline weight against a
+     caption in the same grey it was there but not doing its job. */
+  border-top: 1px solid rgba(178, 149, 214, 0.55);
 }
 
 /* A paragraph that starts a new thought after a figure gets the same rule
    the figure leads do, so the sections read as separated blocks. */
 .topic-body > p.ruled {
-  margin-top: 1.6rem;
-  padding-top: 1.3rem;
-  border-top: 1px solid var(--line);
+  margin-top: 2.4rem;
+  padding-top: 1.75rem;
+  border-top: 1px solid rgba(178, 149, 214, 0.55);
 }
 
 /* ...which means the figure right after a lead must not draw one too. */
