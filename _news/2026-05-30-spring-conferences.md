@@ -10,7 +10,7 @@ This spring took my research on voices from Vancouver to Philadelphia to Seoul �
 
 **May 12 — Philadelphia.** I presented a poster, *Acoustic patterns of voice quality in Korean heritage speakers*, at the 190th Meeting of the Acoustical Society of America.
 
-Philadelphia turned out to be a *very cool* city (and yes, I got to try the Philly cheesesteak). I also attended the ASA School, which was not only educational but honestly one of the highlights of my graduate‑student career. A few days of topic‑focused sessions, heated debates about Fourier transforms, and delightfully nerdy conversations with like‑minded acousticians sent me home with a long list of new things to try — and a renewed sense of why I love this field.
+Philadelphia turned out to be a *very cool* city (and yes, I got to try the Philly cheesesteak). I also attended the ASA School, which was not only educational but honestly one of the highlights of my graduate‑student career. A few days of topic‑focused sessions (including work on targeted ultrasound that liquefies and destroys cancer cells), heated debates about Fourier transforms, and delightfully nerdy conversations with like‑minded acousticians sent me home with a long list of new things to try — and a renewed sense of why I love this field.
 
 ![The ASA School 2026 group, cheering on the steps of a stone house in Philadelphia](/images/asa-school-2026.jpg)
 
