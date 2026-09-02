@@ -18,4 +18,4 @@ My committee included Dr. Henny Yeung (senior supervisor), Dr. Sara Ng (supervis
 
 <p class="caption">After the defense, with my committee: some in the room and some on the screen.</p>
 
-I feel truly grateful to have reached this milestone. My heartfelt thanks go to my amazing committee, to the participants who shared their time and their voices, and to everyone who supported me along the way.
+I am deeply grateful to have reached this milestone. My heartfelt thanks go to my amazing committee, to the participants who shared their time and their voices, and to everyone who supported me along the way.
