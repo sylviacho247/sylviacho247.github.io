@@ -6,16 +6,16 @@ summary: "A spring of voice research: Vancouver, Philadelphia, and Seoul."
 
 This spring took my research on voices from Vancouver to Philadelphia to Seoul — three presentations in under four weeks.
 
-**April 30 — Vancouver.** I gave a talk titled *How early multilingual experience shapes voice quality production: evidence from Korean heritage speakers in Vancouver, BC* at the UBC Language Sciences 7th Annual Postdoctoral &amp; Graduate Research Day.
+**April 30 — Vancouver.** I gave a talk titled *How early multilingual experience shapes voice quality production: evidence from Korean heritage speakers in Vancouver, BC* at the UBC Language Sciences 7th Annual Postdoctoral &amp; Graduate Research Day. (I won the best presentation award!)
 
 **May 12 — Philadelphia.** I presented a poster, *Acoustic patterns of voice quality in Korean heritage speakers*, at the 190th Meeting of the Acoustical Society of America.
 
-Philadelphia turned out to be a *very cool* city (and yes, I got to try the Philly cheesesteak). I also attended the ASA School, which was not only educational but honestly one of the highlights of my graduate‑student career. A few days of topic‑focused sessions (including work on targeted ultrasound that liquefies and destroys cancer cells), heated debates about Fourier transforms, and delightfully nerdy conversations with like‑minded acousticians sent me home with a long list of new things to try — and a renewed sense of why I love this field.
+Philadelphia turned out to be a *very cool* city (and yes, I got to try the Philly cheesesteak). I also attended the ASA School, which was not only educational but honestly one of the highlights of my graduate‑student career. A few days of topic‑focused sessions (including recent advances on histotripsy, i.e., targeted ultrasound that liquefies and destroys cancer cells), heated debates about Fourier transforms, and delightfully nerdy conversations with like‑minded acousticians sent me home with a long list of new things to try, and a renewed sense of why I love this field of research.
 
 ![The ASA School 2026 group, cheering on the steps of a stone house in Philadelphia](/images/asa-school-2026.jpg)
 
 <p class="caption">The ASA School 2026 cohort. Can you find me?</p>
 
-**May 23 — Seoul.** I ended my spring season with a poster, *Effects of early bilingualism on voice quality and voice perception*, at HisPhonCog 2026. It was lovely to be back in Korea after seven years.
+**May 23 — Seoul.** I ended my spring season with a poster, *Effects of early bilingualism on voice quality and voice perception*, at HisPhonCog 2026. It was lovely to be back in Korea after seven years, and to hear new work on fricatives (my favorite class of sounds) as well as other research quantifying sound categories using voice‑quality measures (e.g., residual H1).
 
-These presentations gave me invaluable feedback and new directions for the next phase of my voice‑quality work, as well as for wrapping up my dissertation. I’m looking forward to moving into the dissemination stage afterwards!
+These presentations gave me invaluable feedback and new directions for the next phase of my research, as well as for wrapping up my dissertation. I’m looking forward to moving into the dissemination stage afterwards!
