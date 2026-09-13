@@ -16,6 +16,6 @@ Philadelphia turned out to be a *very cool* city (and yes, I got to try the Phil
 
 <p class="caption">The ASA School 2026 cohort. Can you find me?</p>
 
-**May 23 — Seoul.** I ended my spring season with a poster, *Effects of early bilingualism on voice quality and voice perception*, at HisPhonCog 2026. It was lovely to be back in Korea after seven years, and to hear new work on fricatives (my favorite class of sounds) as well as other research quantifying sound categories using voice‑quality measures (e.g., residual H1).
+**May 23 — Seoul.** I ended my spring season with a poster, *Effects of early bilingualism on voice quality and voice perception*, at HisPhonCog 2026. It was lovely to be back in Korea after seven years, and to find out about new work on fricatives (my favorite class of sounds) as well as other research quantifying sound categories using voice‑quality measures (e.g., residual H1).
 
 These presentations gave me invaluable feedback and new directions for the next phase of my research, as well as for wrapping up my dissertation. I’m looking forward to moving into the dissemination stage afterwards!
